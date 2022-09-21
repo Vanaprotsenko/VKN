@@ -1,7 +1,6 @@
-import math 
-x=float(input("Введіть x "))
-b=math.cos(x)+math.sin(x*2)
-s=pow(4,2*x)
-d=math.log1p(x+1)
-s1=(b/s)-d
-print(s1)
+import math
+x = int(input("Введіть трьохзначне число"))
+last = x//100
+first = x%10
+second = (x-last*100-first)/10
+print(first*100+second*10+last)
